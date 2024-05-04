@@ -34,9 +34,9 @@ jobs:
         arch: [ linux/arm64 , linux/amd64 ]
         include:
           - arch: linux/arm64
-            builder: Ubuntu20-001
+            builder: self-hosted
           - arch: linux/amd64
-            builder: Ubuntu20-001
+            builder: self-hosted
     name: Build - ${{matrix.arch}}
     runs-on: ${{matrix.builder}}
     permissions:
